@@ -16,13 +16,13 @@ class Page1 extends StatelessWidget {
           ElevatedButton(
             child: Text('Pagina 2'),
             style: ElevatedButton.styleFrom(
-              primary: Colors.amber, onPrimary: Colors.white),
+              foregroundColor: Colors.white, backgroundColor: Colors.amber),
               onPressed: () {
                 Navigator.pushNamed(context, '/page2');
               }),
               ElevatedButton(child: Text('Pagina 3'),
               style: ElevatedButton.styleFrom(
-                primary: Colors.red, onPrimary: Colors.white
+                foregroundColor: Colors.white, backgroundColor: Colors.red
               ), onPressed: (){
                 Navigator.pushNamed(context, '/page3');
               }),

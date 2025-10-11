@@ -3,7 +3,7 @@ import 'package:practica_04/src/home_page.dart';
 
 class DatosPage extends StatelessWidget {
   final Data data;
-  const DatosPage({required this.data});
+  const DatosPage({super.key, required this.data});
 
   @override
   Widget build(BuildContext context) {

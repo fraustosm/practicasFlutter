@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:practica_04/src/datos_recibidos.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -36,12 +38,12 @@ class _HomePageState extends State<HomePage> {
               value: _valor,
               items: const [
                 DropdownMenuItem(
-                  child: Text('Mujer'),
                   value: 1,
+                  child: Text('Mujer'),
                 ),
                 DropdownMenuItem(
-                  child: Text('Hombre'),
                   value: 2,
+                  child: Text('Hombre'),
                 ),
               ],
               onChanged: (int? selected) {
