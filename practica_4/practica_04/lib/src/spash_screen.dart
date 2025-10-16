@@ -13,7 +13,6 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Navega a la pantalla principal después de 3 segundos
     Timer(
       Duration(seconds: 3),
       () => Navigator.of(context).pushReplacement(
@@ -33,8 +32,6 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Asegúrate de tener tu logo en la carpeta 'assets'
-            // y haberlo declarado en pubspec.yaml
             Image.asset('assets/logo.png', width: 150),
             SizedBox(height: 50),
             CircularProgressIndicator(

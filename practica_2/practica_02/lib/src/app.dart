@@ -4,6 +4,8 @@ import 'package:practica_02/src/page2.dart';
 import 'package:practica_02/src/page3.dart';
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
 
   Widget build(BuildContext context) {
@@ -12,8 +14,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/Page1',
       routes: {
         '/page1': (context) => Page1(),
-        '/Page2': (context) => Page2(),
-        '/Page3': (context) => Page3(),
+        '/page2': (context) => Page2(),
+        '/page3': (context) => Page3(),
       },
     );
   }

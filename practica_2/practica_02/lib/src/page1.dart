@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Page1 extends StatelessWidget {
+  const Page1({super.key});
+
   @override 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,18 +16,17 @@ class Page1 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           ElevatedButton(
-            child: Text('Pagina 2'),
             style: ElevatedButton.styleFrom(
               foregroundColor: Colors.white, backgroundColor: Colors.amber),
               onPressed: () {
                 Navigator.pushNamed(context, '/page2');
-              }),
-              ElevatedButton(child: Text('Pagina 3'),
-              style: ElevatedButton.styleFrom(
+              },
+            child: Text('Pagina 2')),
+              ElevatedButton(style: ElevatedButton.styleFrom(
                 foregroundColor: Colors.white, backgroundColor: Colors.red
               ), onPressed: (){
                 Navigator.pushNamed(context, '/page3');
-              }),
+              }, child: Text('Pagina 3')),
             ],
             ),
             ),
